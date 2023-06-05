@@ -1,61 +1,4 @@
-// var url = 'https://avatarfiles.alphacoders.com/822/82242.png';
-// $(document).ready(function() {
-//     var image = new Image();
-//     image.src = url;
-//     $('#container').append(image);
-// });
 
-// var coll = [{img :"images\1451603839739.jpg",na :"1" },{img :"C:\Users\darra\Desktop\photo Heaven\Project-Photo\images\a60.jpg",na :"2" }]
-// var change = function(){
-//    for(var i=0;i<coll.length;i++){
-    
-//    $('.NEXT').click = coll[i].img
-//    }
-
-// }
-
-// $(".images a").click(function(event) {
-//     event.preventDefault();
-//     var imageLocation = $(this).attr("href");
-  
-//     //Update overlay with the image linked in the link
-//     $image.attr("src", imageLocation);
-  
-//     //Show the overlay.
-//     $overlay.show();
-  
-//     //show buttons
-//     $leftArrow.show();
-//     $rightArrow.show();
-  
-//     //Get child's alt attribute and set caption
-//     var captionText = $(this).children("img").attr("alt");
-//     $caption.text(captionText);
-//   });
-  
-  
-  
-//   //When overlay is clicked
-//   $overlay.click(function(){
-//     //Hide the overlay
-//     $overlay.hide();
-//   });
-
-// var coll = ["images\Screenshot 2023-06-05 143145.png","images\a60.jpg","images\1451603839739.jpg","images\613a26b954bb5a42ebef8e6d_613a20fd22ebdb11e38c6723_abin-varghese-pen-characters.jpg"]
-// var change = function(array){
-//     for(var i =0;i<coll.length;i++){
-//       onclick =   $('.card-img').append(coll[i])
-//     }
-// }
-
-/////////////code that works 
-//   var change1 = $(document).ready(function(){
-//       $(".bb").click(function(){
-//           // Change src attribute of image
-         
-//           $('.card-img').attr("src", "https://catastic.b-cdn.net/wp-content/uploads/2023/04/white-british-cat-are-wear-sunglass-shirt-concept-summer-yellow-background-1.jpg");
-//       });    
-//  });
 
  var images = [
     "https://c8.alamy.com/comp/2JK2K3W/a-cat-wearing-glasses-with-the-sky-reflected-2JK2K3W.jpg",
@@ -88,27 +31,22 @@
     });
   });
 
+// It checks to see if the span id #heart has "liked" class, if not it run the else statement and adds the "liked" class, on a 2nd click it see that it has the "liked" class so it replaces the ihherHTML and removes class, on 3rd click it runs the else statement again cause there is no "liked" class(remomved on 2nd click).
+
+$(document).foundation();
+
+$(function() {
+  $('.button-like')
+    .bind('click', function(event) {
+      $(".button-like").toggleClass("liked");
+    })
+});
 
 
-//  var coll = src = "images\Screenshot 2023-06-05 143145.png"
-//  function loop (array){
-//     for(var i = 0;i<coll.length;i++){
-//         return coll[i]
-//     }
-//  }
-
-// var change1 = $(document).ready(function() {
-//      $(".bb").click(function() {
-//        var currentImg = $(this).closest('.container').find('.card-img');
-//        var nextImg = currentImg.next('.card-img');
   
-  
-//        if (nextImg.length > 0) {
-//          currentImg.attr("src", "https://static.boredpanda.com/blog/wp-content/uploads/2021/01/funny-cat-memes-jokes-fb52-png__700.jpg");
-//          nextImg.attr("src", "https://hips.hearstapps.com/hmg-prod/images/womanyellingcat-1573233850.jpg");
-//        }
-//      });
-//    });
+
+
+
 
 
 
